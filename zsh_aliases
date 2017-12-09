@@ -1,0 +1,13 @@
+#pip3 for python by default
+alias pip="pip3"
+
+#SFW version of thefuck command
+alias heck="fuck"
+
+#Clear muscle memory
+alias clear="echo 'Use CTRL L'"
+
+#Docker exec cli shortcut
+alias dexec="docker exec -it"
+
+alias zshrc="source .zshrc && export PS1=%{%f%b%k%}$(build_prompt) "
