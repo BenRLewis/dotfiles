@@ -20,7 +20,7 @@ then
 fi
 
 #Clone the git repo for the dotfiles
-if [ ! -d "~/dotfiles" ]; then
+if [ ! -d ~/dotfiles ]; then
   git clone https://github.com/FollowingGhosts/dotfiles ~/dotfiles
 fi
 #Link the dotfiles to where they should be
@@ -30,4 +30,4 @@ ln -fs $(pwd)/zsh_aliases ~/.zsh_aliases
 ln -fs $(pwd)/zsh_paths ~/.zsh_paths
 ln -fs $(pwd)/zshrc ~/.zshrc
 
-chsh /bin/zsh
+chsh -s /bin/zsh `whoami`
