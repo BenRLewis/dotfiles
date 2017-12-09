@@ -8,7 +8,7 @@ antigen bundle docker
 antigen bundle lukechilds/zsh-nvm
 
 # OS X plugins
-if [ `uname` == "Darwin" ]; then
+if [ `uname` = "Darwin" ]; then
  antigen bundle brew
  antigen bundle osx
 fi
