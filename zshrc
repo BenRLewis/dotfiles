@@ -23,3 +23,5 @@ source .zsh_aliases
 if [[ -z "${PS1}" ]]; then
   export PS1="%{%f%b%k%}$(build_prompt) "
 fi
+
+DEFAULT_USER=`whoami`
