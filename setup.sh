@@ -22,10 +22,10 @@ fi
 git clone https://github.com/FollowingGhosts/dotfiles ~/
 
 #Link the dotfiles to where they should be
-ln -s tmux.conf ~/tmux.conf
-ln -s vimrc ~/.vimrc
-ln -s zsh_aliases ./.zsh_aliases
-ln -s zsh_paths ./.zsh_paths
-ln -s zshrc ./zshrc
+ln -s $(pwd)tmux.conf ~/tmux.conf
+ln -s $(pwd)vimrc ~/.vimrc
+ln -s $(pwd)zsh_aliases ./.zsh_aliases
+ln -s $(pwd)zsh_paths ./.zsh_paths
+ln -s $(pwd)zshrc ./zshrc
 
 chsh /bin/zsh
