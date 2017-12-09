@@ -26,8 +26,8 @@ fi
 #Link the dotfiles to where they should be
 ln -fs $(pwd)/tmux.conf ~/.tmux.conf
 ln -fs $(pwd)/vimrc ~/.vimrc
-ln -fs $(pwd)/zsh_aliases ./.zsh_aliases
-ln -fs $(pwd)/zsh_paths ./.zsh_paths
-ln -fs $(pwd)/zshrc ./.zshrc
+ln -fs $(pwd)/zsh_aliases ~/.zsh_aliases
+ln -fs $(pwd)/zsh_paths ~/.zsh_paths
+ln -fs $(pwd)/zshrc ~/.zshrc
 
 chsh /bin/zsh
