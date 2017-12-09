@@ -1,18 +1,18 @@
 #!/bin/bash
 
 #Install antigen if it isn't installed
-if [ ! -d "~/bin/antigen" ]; then
+if [ ! -d ~/bin/antigen ]; then
   echo "Cloning antigen"
   git clone https://github.com/zsh-users/antigen ~/bin/antigen
 fi
 
 #Install vundle for vim if it isn't installed
-if [ ! -d "~/.vim/bundle/Vundle.vim" ]; then
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
   echo "Cloning vundle"
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
-read -p "Do you want to download SSH keys from Github? y/N" -n 1 -r
+read -p "Do you want to download SSH keys from Github? [y/N] " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
