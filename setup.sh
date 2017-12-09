@@ -30,5 +30,7 @@ ln -fs $(pwd)/zsh_aliases ~/.zsh_aliases
 ln -fs $(pwd)/zsh_paths ~/.zsh_paths
 ln -fs $(pwd)/zshrc ~/.zshrc
 
+vim +PluginInstall +qall
 echo "You will be prompted for your password to switch shells"
 chsh -s /bin/zsh `whoami`
+
