@@ -23,6 +23,7 @@ fi
 if [ ! -d ~/dotfiles ]; then
   git clone https://github.com/FollowingGhosts/dotfiles ~/dotfiles
 fi
+cd ~/dotfiles
 #Link the dotfiles to where they should be
 ln -fs $(pwd)/tmux.conf ~/.tmux.conf
 ln -fs $(pwd)/vimrc ~/.vimrc
