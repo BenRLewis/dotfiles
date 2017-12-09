@@ -17,8 +17,8 @@ antigen theme agnoster
 
 antigen apply
 
-source .zsh_paths
-source .zsh_aliases
+source ~/.zsh_paths
+source ~/.zsh_aliases
 #Fix PS1 if it's not set
 if [[ -z "${PS1}" ]]; then
   export PS1="%{%f%b%k%}$(build_prompt) "
