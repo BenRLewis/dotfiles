@@ -11,6 +11,7 @@ antigen bundle lukechilds/zsh-nvm
 if [ `uname` = "Darwin" ]; then
  antigen bundle brew
  antigen bundle osx
+ archey -c -o
 fi
 
 antigen theme agnoster

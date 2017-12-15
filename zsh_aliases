@@ -13,3 +13,5 @@ alias dexec="docker exec -it"
 alias zshrc="source .zshrc && export PS1=%{%f%b%k%}$(build_prompt) "
 
 alias dotupdate="cd ~/dotfiles && git pull && source ~/.zshrc"
+
+alias sshq="ssh -o 'StrictHostKeyChecking=no' -q"
