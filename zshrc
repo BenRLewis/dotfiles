@@ -11,7 +11,6 @@ antigen bundle lukechilds/zsh-nvm
 if [ `uname` = "Darwin" ]; then
  antigen bundle brew
  antigen bundle osx
- archey -c -o
 fi
 
 antigen theme agnoster
@@ -26,3 +25,6 @@ if [[ -z "${PS1}" ]]; then
 fi
 
 DEFAULT_USER=`whoami`
+if [ -x "$(command -v neofetch)" ]; then
+        neofetch
+fi
