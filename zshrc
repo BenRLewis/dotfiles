@@ -7,6 +7,7 @@ antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle docker
 antigen bundle lukechilds/zsh-nvm
 antigen bundle wd
+antigen bundle extract
 
 # OS X plugins
 if [ `uname` = "Darwin" ]; then
