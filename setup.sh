@@ -21,7 +21,7 @@ fi
 
 #Clone the git repo for the dotfiles
 if [ ! -d ~/dotfiles ]; then
-  git clone https://github.com/FollowingGhosts/dotfiles ~/dotfiles
+  git clone https://github.com/benrlewis/dotfiles ~/dotfiles
 fi
 cd ~/dotfiles
 #Link the dotfiles to where they should be
@@ -34,4 +34,3 @@ ln -fs $(pwd)/zshrc ~/.zshrc
 vim +PluginInstall +qall
 echo "You will be prompted for your password to switch shells"
 chsh -s /bin/zsh `whoami`
-

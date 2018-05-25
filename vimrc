@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Plugin 'VundleVim/Vundle.vim'
 Bundle 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
@@ -51,3 +51,8 @@ set foldlevelstart=10
 set foldnestmax=10
 nnoremap <space> za
 set foldmethod=indent
+
+set title
+
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
