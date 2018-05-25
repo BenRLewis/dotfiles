@@ -32,5 +32,8 @@ ln -fs $(pwd)/zsh_paths ~/.zsh_paths
 ln -fs $(pwd)/zshrc ~/.zshrc
 
 vim +PluginInstall +qall
+echo "Running install.sh for YouCompleteMe"
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh
 echo "You will be prompted for your password to switch shells"
 chsh -s /bin/zsh `whoami`
