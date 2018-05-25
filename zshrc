@@ -18,10 +18,9 @@ if [ `uname` = "Darwin" ]; then
  antigen bundle osx
 fi
 
-if [ "$(grep -Ei 'debian|buntu|mint' /etc/*release)" ]; then
-   antigen bundle debian
+if [ -n "$(which apt-get 2>/dev/null)" ]; then
+    antigen bundle debian
 fi
-
 antigen theme agnoster
 
 antigen apply
