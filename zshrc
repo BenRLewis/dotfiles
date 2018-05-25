@@ -8,11 +8,18 @@ antigen bundle docker
 antigen bundle lukechilds/zsh-nvm
 antigen bundle wd
 antigen bundle extract
-
+antigen bundle dirhistory
+antigen bundle sudo
+antigen bundle vagrant
+antigen bundle web-search
 # OS X plugins
 if [ `uname` = "Darwin" ]; then
  antigen bundle brew
  antigen bundle osx
+fi
+
+if [ "$(grep -Ei 'debian|buntu|mint' /etc/*release)" ]; then
+   antigen bundle debian
 fi
 
 antigen theme agnoster
