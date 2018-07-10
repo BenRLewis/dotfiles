@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 #Install antigen if it isn't installed
 if [ ! -d ~/bin/antigen ]; then
   echo "Cloning antigen"
@@ -35,9 +35,9 @@ vim +PluginInstall +qall
 if [ -n "$(which cmake 2>/dev/null)" ]; then
     echo "Running install.sh for YouCompleteMe"
     cd ~/.vim/bundle/YouCompleteMe
-    python install.py    
+    python install.py
 else
-   echo "CMake not installed, youcompleteme needs it to be compiled"        
+   echo "CMake not installed, youcompleteme needs it to be compiled"
 fi
 echo "You will be prompted for your password to switch shells"
 chsh -s /bin/zsh `whoami`
