@@ -13,7 +13,6 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
 fi
 
 read -p "Do you want to download SSH keys from Github? [y/N] " -n 1 -r
-echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     curl https://github.com/FollowingGhosts.keys --create-dirs -o ~/.ssh/authorized_keys
