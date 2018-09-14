@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+
 #Install antigen if it isn't installed
 if [ ! -d ~/bin/antigen ]; then
   echo "Cloning antigen"
@@ -13,7 +13,7 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
 fi
 
 read -p "Do you want to download SSH keys from Github? [y/N] " -n 1 -r
-
+echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     curl https://github.com/FollowingGhosts.keys --create-dirs -o ~/.ssh/authorized_keys
@@ -32,16 +32,10 @@ ln -fs $(pwd)/zsh_paths ~/.zsh_paths
 ln -fs $(pwd)/zshrc ~/.zshrc
 
 vim +PluginInstall +qall
-if [ -n "$(which cmake 2>/dev/null)" ]; then
+if [ -n "$(which apt-get 2>/dev/null)" ]; then
     echo "Running install.sh for YouCompleteMe"
     cd ~/.vim/bundle/YouCompleteMe
-    python install.py
-else
-   echo "CMake not installed, youcompleteme needs it to be compiled"
+    python install.py    
 fi
 echo "You will be prompted for your password to switch shells"
 chsh -s /bin/zsh `whoami`
-
-echo "Setting up oh-my-tmux"
-ln -s -f .tmux/.tmux.conf
-ln -s -f tmux.conf.local ~/.tmux.conf.local

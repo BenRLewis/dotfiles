@@ -5,13 +5,13 @@ antigen bundle pip
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle docker
-antigen bundle lukechilds/zsh-nvm
 antigen bundle wd
 antigen bundle extract
-antigen bundle dirhistory
+#antigen bundle dirhistory
 antigen bundle sudo
 antigen bundle vagrant
 antigen bundle web-search
+antigen bundle mosh
 # OS X plugins
 if [ `uname` = "Darwin" ]; then
  antigen bundle brew
@@ -27,12 +27,12 @@ antigen apply
 
 source ~/.zsh_paths
 source ~/.zsh_aliases
-#Fix PS1 if it's not set
-if [[ -z "${PS1}" ]]; then
-  export PS1="%{%f%b%k%}$(build_prompt) "
-fi
+source ~/.zsh_host # This file is host specific/not necessarily required or on github
 
 DEFAULT_USER=`whoami`
 if [ -x "$(command -v neofetch)" ]; then
         neofetch
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
