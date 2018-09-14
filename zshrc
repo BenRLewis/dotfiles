@@ -27,7 +27,8 @@ antigen apply
 
 source ~/.zsh_paths
 source ~/.zsh_aliases
-source ~/.zsh_host # This file is host specific/not necessarily required or on github
+[ -f ~/.zsh_hosts ] && source ~/.zsh_host # This file is host specific/not necessarily required or on github
+
 
 DEFAULT_USER=`whoami`
 if [ -x "$(command -v neofetch)" ]; then
