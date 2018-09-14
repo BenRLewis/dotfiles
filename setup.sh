@@ -16,7 +16,7 @@ read -p "Do you want to download SSH keys from Github? [y/N] " -n 1 -r
 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    curl https://github.com/FollowingGhosts.keys --create-dirs -o ~/.ssh/authorized_keys
+    curl https://github.com/benrlewis.keys --create-dirs -o ~/.ssh/authorized_keys
 fi
 
 #Clone the git repo for the dotfiles
