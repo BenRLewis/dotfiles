@@ -43,5 +43,5 @@ echo "You will be prompted for your password to switch shells"
 chsh -s /bin/zsh `whoami`
 
 echo "Setting up oh-my-tmux"
-ln -s -f .tmux/.tmux.conf
-ln -s -f tmux.conf.local ~/.tmux.conf.local
+ln -s -f ~/dotfiles/.tmux/.tmux.conf ~/tmux.conf
+ln -s -f ~/dotfiles/.tmux/tmux.conf.local ~/.tmux.conf.local
