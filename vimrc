@@ -15,6 +15,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'fatih/vim-go'
 Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -33,6 +34,7 @@ filetype plugin indent on    " required
 
 syntax enable
 set background=dark
+set autoindent
 colorscheme solarized
 set tabstop=4
 set softtabstop=4
@@ -40,19 +42,18 @@ set expandtab
 set number
 set showcmd
 set cursorline
-filetype indent on
+filetype plugin indent on
 set wildmenu
 set lazyredraw
 set showmatch
 set incsearch
 set hlsearch
-
+set autowrite
 set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 nnoremap <space> za
 set foldmethod=indent
-
 set title
 set laststatus=2
 
