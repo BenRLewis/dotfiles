@@ -12,6 +12,8 @@ antigen bundle sudo
 antigen bundle vagrant
 antigen bundle web-search
 antigen bundle mosh
+export NVM_LAZY_LOAD=true
+antigen bundle lukechilds/zsh-nvm
 # OS X plugins
 if [ `uname` = "Darwin" ]; then
  antigen bundle brew
