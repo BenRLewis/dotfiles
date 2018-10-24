@@ -5,7 +5,7 @@
 alias heck="fuck"
 
 #Clear muscle memory
-alias clear="echo 'Use CTRL L'"
+alias clear="clear && echo 'Use CTRL L'"
 
 #Docker exec cli shortcut
 alias dexec="docker exec -it"
