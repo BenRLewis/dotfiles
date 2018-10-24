@@ -15,6 +15,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Bundle 'c3m3gyanesh/p4-syntax-highlighter-collection', {'rtp': 'vim'}
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
