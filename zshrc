@@ -13,6 +13,7 @@ antigen bundle vagrant
 antigen bundle web-search
 antigen bundle mosh
 export NVM_LAZY_LOAD=true
+NVM_SYMLINK_CURRENT=true
 antigen bundle lukechilds/zsh-nvm
 # OS X plugins
 if [ `uname` = "Darwin" ]; then
@@ -26,6 +27,8 @@ fi
 antigen theme agnoster
 
 antigen apply
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 source ~/.zsh_paths
 source ~/.zsh_aliases
@@ -38,4 +41,4 @@ if [ -x "$(command -v neofetch)" ]; then
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+eval "$(direnv hook zsh)"
