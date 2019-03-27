@@ -15,6 +15,7 @@ antigen bundle mosh
 export NVM_LAZY_LOAD=true
 NVM_SYMLINK_CURRENT=true
 antigen bundle lukechilds/zsh-nvm
+setopt EXTENDED_GLOB
 # OS X plugins
 if [ `uname` = "Darwin" ]; then
  antigen bundle brew
@@ -32,7 +33,7 @@ bindkey '^[[B' history-substring-search-down
 
 source ~/.zsh_paths
 source ~/.zsh_aliases
-[ -f ~/.zsh_hosts ] && source ~/.zsh_host # This file is host specific/not necessarily required or on github
+[ -f ~/.zsh_host ] && source ~/.zsh_host # This file is host specific/not necessarily required or on github
 
 
 DEFAULT_USER=`whoami`
