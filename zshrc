@@ -12,6 +12,7 @@ antigen bundle sudo
 antigen bundle vagrant
 antigen bundle web-search
 antigen bundle mosh
+antigen bundle thefuck
 export NVM_LAZY_LOAD=true
 antigen bundle lukechilds/zsh-nvm
 # OS X plugins
@@ -26,7 +27,7 @@ fi
 antigen theme agnoster
 
 antigen apply
-
+export EDITOR=vim
 source ~/.zsh_paths
 source ~/.zsh_aliases
 [ -f ~/.zsh_hosts ] && source ~/.zsh_host # This file is host specific/not necessarily required or on github

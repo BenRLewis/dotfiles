@@ -3,6 +3,7 @@
 
 #SFW version of thefuck command
 alias heck="fuck"
+alias please="fuck"
 
 #Clear muscle memory
 alias clear="clear && echo 'Use CTRL L'"
