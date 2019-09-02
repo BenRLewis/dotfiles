@@ -36,6 +36,7 @@ filetype plugin indent on    " required
 syntax enable
 set background=dark
 set autoindent
+set mouse=a
 colorscheme solarized
 set tabstop=4
 set softtabstop=4

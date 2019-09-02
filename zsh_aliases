@@ -22,3 +22,4 @@ alias netns="sudo ip netns"
 alias pipupgrade="pip freeze — local | grep -v ‘^\-e’ | cut -d = -f 1 | xargs -n1 pip install -U"
 
 alias pip3upgrade="pip3 freeze — local | grep -v ‘^\-e’ | cut -d = -f 1 | xargs -n1 pip3 install -U"
+alias hg='history | grep'

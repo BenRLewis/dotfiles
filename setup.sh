@@ -46,3 +46,7 @@ chsh -s /bin/zsh `whoami`
 echo "Setting up oh-my-tmux"
 ln -s -f ~/dotfiles/.tmux/.tmux.conf ~/tmux.conf
 ln -s -f ~/dotfiles/.tmux/tmux.conf.local ~/.tmux.conf.local
+
+echo "Installing notes"
+curl -L https://rawgit.com/pimterry/notes/latest-release/install.sh | bash
+sudo bash -c "curl -L https://rawgit.com/pimterry/notes/latest-release/_notes > /usr/local/share/zsh/site-functions/_notes"

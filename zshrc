@@ -14,7 +14,9 @@ antigen bundle web-search
 antigen bundle mosh
 antigen bundle thefuck
 export NVM_LAZY_LOAD=true
+NVM_SYMLINK_CURRENT=true
 antigen bundle lukechilds/zsh-nvm
+setopt EXTENDED_GLOB
 # OS X plugins
 if [ `uname` = "Darwin" ]; then
  antigen bundle brew
@@ -28,9 +30,12 @@ antigen theme agnoster
 
 antigen apply
 export EDITOR=vim
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
 source ~/.zsh_paths
 source ~/.zsh_aliases
-[ -f ~/.zsh_hosts ] && source ~/.zsh_host # This file is host specific/not necessarily required or on github
+[ -f ~/.zsh_host ] && source ~/.zsh_host # This file is host specific/not necessarily required or on github
 
 
 DEFAULT_USER=`whoami`
@@ -39,4 +44,4 @@ if [ -x "$(command -v neofetch)" ]; then
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+eval "$(direnv hook zsh)"
