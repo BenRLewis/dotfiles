@@ -31,6 +31,7 @@ ln -fs $(pwd)/vimrc ~/.vimrc
 ln -fs $(pwd)/zsh_aliases ~/.zsh_aliases
 ln -fs $(pwd)/zsh_paths ~/.zsh_paths
 ln -fs $(pwd)/zshrc ~/.zshrc
+ln -fs $(pwd)/zsh_power9k ~/.zsh_power9k
 
 vim +PluginInstall +qall
 if [ -n "$(which cmake 2>/dev/null)" ]; then

@@ -37,6 +37,8 @@ bindkey '^[[B' history-substring-search-down
 
 source ~/.zsh_paths
 source ~/.zsh_aliases
+source ~/.zsh_power9k
+
 [ -f ~/.zsh_host ] && source ~/.zsh_host # This file is host specific/not necessarily required or on github
 
 
