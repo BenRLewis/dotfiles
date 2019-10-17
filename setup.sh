@@ -25,11 +25,13 @@ if [ ! -d ~/dotfiles ]; then
 fi
 cd ~/dotfiles
 #Link the dotfiles to where they should be
-ln -fs $(pwd)/tmux.conf ~/.tmux.conf
+ln -fs $(pwd)/.tmux.conf ~/.tmux.conf
+ln -fs $(pwd)/.tmux.conf.local ~/.tmux.conf.local
 ln -fs $(pwd)/vimrc ~/.vimrc
 ln -fs $(pwd)/zsh_aliases ~/.zsh_aliases
 ln -fs $(pwd)/zsh_paths ~/.zsh_paths
 ln -fs $(pwd)/zshrc ~/.zshrc
+ln -fs $(pwd)/zsh_power9k ~/.zsh_power9k
 
 vim +PluginInstall +qall
 if [ -n "$(which cmake 2>/dev/null)" ]; then

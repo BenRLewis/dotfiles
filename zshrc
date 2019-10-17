@@ -1,5 +1,7 @@
 source ~/bin/antigen/antigen.zsh
+POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 antigen use oh-my-zsh
+antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen bundle git
 antigen bundle pip
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -12,6 +14,7 @@ antigen bundle sudo
 antigen bundle vagrant
 antigen bundle web-search
 antigen bundle mosh
+antigen bundle thefuck
 export NVM_LAZY_LOAD=true
 NVM_SYMLINK_CURRENT=true
 antigen bundle lukechilds/zsh-nvm
@@ -25,14 +28,17 @@ fi
 if [ -n "$(which apt-get 2>/dev/null)" ]; then
     antigen bundle debian
 fi
-antigen theme agnoster
+#antigen theme agnoster
 
 antigen apply
+export EDITOR=vim
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 source ~/.zsh_paths
 source ~/.zsh_aliases
+source ~/.zsh_power9k
+
 [ -f ~/.zsh_host ] && source ~/.zsh_host # This file is host specific/not necessarily required or on github
 
 
