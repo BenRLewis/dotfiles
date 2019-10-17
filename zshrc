@@ -1,5 +1,7 @@
 source ~/bin/antigen/antigen.zsh
+POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 antigen use oh-my-zsh
+antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen bundle git
 antigen bundle pip
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -26,7 +28,7 @@ fi
 if [ -n "$(which apt-get 2>/dev/null)" ]; then
     antigen bundle debian
 fi
-antigen theme agnoster
+#antigen theme agnoster
 
 antigen apply
 export EDITOR=vim

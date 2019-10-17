@@ -11,7 +11,7 @@ alias clear="clear && echo 'Use CTRL L'"
 #Docker exec cli shortcut
 alias dexec="docker exec -it"
 
-alias zshrc="source .zshrc && export PS1=%{%f%b%k%}$(build_prompt) "
+#alias zshrc="source .zshrc && export PS1=%{%f%b%k%}$(build_prompt) "
 
 alias dotupdate="cd ~/dotfiles && git pull && source ~/.zshrc"
 
