@@ -1,5 +1,6 @@
 source ~/bin/antigen/antigen.zsh
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
+POWERLEVEL9K_MODE=nerdfont-complete
 antigen use oh-my-zsh
 antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen bundle git
