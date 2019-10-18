@@ -1,4 +1,4 @@
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 #POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon ssh dir vcs) 
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs) 
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(battery status root_indicator background_jobs history time)
